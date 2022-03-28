@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br>Advanture</h2>
+        <img src="all.jpg" alt="logo" id="all">
+        <a href="https://www.google.com/maps/" id="btn">Explore</a>
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga expedita consequuntur dolore incidunt
+            consequatur magnam unde tenetur ea eos repudiandae repellat tempora rerum porro minus magni soluta vitae,
+            voluptas facilis sint! Earum consectetur, distinctio excepturi officia quisquam ullam nisi eligendi rerum
+            sapiente beatae consequatur nemo minima obcaecati fuga hic!<br><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, incidunt. Praesentium ipsa, corporis aut
+            exercitationem id ab nobis alias repellat voluptatibus quam dolore nisi in minima natus qui! Dolorem, eaque
+            deleniti, ullam consequuntur molestiae modi voluptate ipsam porro eius voluptatibus vitae fuga, nostrum
+            dolor sint!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates voluptatibus
+            aspernatur, sint ad placeat similique atque possimus quas illum nostrum! Ipsum consectetur nulla labore
+            repellat quos nesciunt fuga deleniti nobis optio temporibus cupiditate suscipit, ad tempore placeat ut,
+            corrupti veniam obcaecati repudiandae voluptatibus accusamus, odit facere. Error, saepe
+            itaque?<br><br>Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Ipsam sed minus eaque voluptatum delectus adipisci autem nulla qui molestiae, iusto
+            repellat animi cupiditate officia harum ipsa nobis atque. Provident cupiditate quisquam officiis nulla est
+            doloremque repudiandae, exercitationem delectus impedit perferendis, culpa sint itaque dignissimos officia.
+            Harum quibusdam suscipit cum accusantium ipsa veritatis, similique itaque minima possimus vero repellat est!
+            Id facere assumenda est ducimus voluptatibus officia maxime velit, neque, consequuntur, natus tenetur. Hic
+            veniam nostrum exercitationem fuga culpa consequatur labore nesciunt. Iure consectetur sunt animi repellat,
+            dignissimos placeat, pariatur illum alias quis dolor voluptatibus rem ipsa suscipit veritatis molestiae
+            voluptates.<br><br></p>
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let all = document.getElementById('all');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY; 
+
+            text.style.top = 50 + value * -0.5 + '%'; 
+            all.style.top = value * -1.5 + 'px';
+        })
+     
+    </script>
+</body>
+
+</html>
